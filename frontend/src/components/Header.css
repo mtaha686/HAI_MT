@@ -1,0 +1,108 @@
+.header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  color: #667eea;
+}
+
+.logo h1 {
+  color: #2c3e50;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.connection-status {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.status-indicator.connected {
+  background: rgba(46, 204, 113, 0.1);
+  color: #27ae60;
+}
+
+.status-indicator.disconnected {
+  background: rgba(231, 76, 60, 0.1);
+  color: #e74c3c;
+}
+
+.status-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.status-text {
+  white-space: nowrap;
+}
+
+.reconnect-button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reconnect-button:hover {
+  background: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    padding: 0 10px;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .logo h1 {
+    font-size: 20px;
+  }
+  
+  .connection-status {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .status-text {
+    font-size: 12px;
+  }
+}

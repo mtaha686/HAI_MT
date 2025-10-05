@@ -1,0 +1,38 @@
+# Core ML and NLP libraries
+torch>=2.0.0
+transformers>=4.30.0
+datasets>=2.12.0
+tokenizers>=0.13.0
+accelerate>=0.20.0
+
+# Parameter-efficient fine-tuning
+peft>=0.4.0
+
+# API and web framework
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+pydantic>=2.0.0
+
+# Data processing
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# Visualization and evaluation
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Logging and monitoring
+wandb>=0.15.0
+
+# Development and utilities
+tqdm>=4.65.0
+python-dotenv>=1.0.0
+pathlib2>=2.3.7
+
+# Optional: For better performance on CPU
+# intel-extension-for-pytorch  # Uncomment if using Intel CPU
+# optimum[onnxruntime]  # Uncomment for ONNX optimization
+
+# Note: For GPU support, install PyTorch with CUDA:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
